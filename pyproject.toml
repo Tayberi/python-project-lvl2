@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "hexlet-code"
+version = "0.1.0"
+description = ""
+packages = [
+    { include = "gendiff" },
+]
+authors = ["Tayberi Evgeny <tayberi00@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.scripts]
+gendiff = "gendiff.scripts.gendiff:main"
+
+
+[tool.poetry.group.dev.dependencies]
+wemake-python-styleguide = "^0.17.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
